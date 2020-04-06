@@ -7,3 +7,4 @@ aux_source_directory(./src srcs)
 add_executable(leetcode ${srcs})
 
 add_subdirectory("divisorGame")
+add_subdirectory("isSubsequence")
