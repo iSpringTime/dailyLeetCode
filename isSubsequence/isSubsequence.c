@@ -16,7 +16,7 @@ int isSubsequence(char * s, char * t){
     for (i = 0;i < slength;i++) {
         for (j = pos;j < length;j++) {
             if (s[i] == t[j]) {
-                pos = j;
+                pos = j + 1;
                 isFind = 1;
                 break;
             }
