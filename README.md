@@ -18,3 +18,9 @@ https://m.sohu.com/a/153858619_466939/?pvid=000115_3w_a&strategyid=00014
 红黑树：https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/03.01.md
 
 B+树的特点
+
+设有6个节点的无向简单图是一个连通图，该图可能的边数是（）
+小李负责某产品版本自研代码里片段引用开源的整改
+ 
+设有6个节点的无向简单图是一个连通图，该图可能的边数是
+
