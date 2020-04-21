@@ -900,3 +900,46 @@ C语言中，字符型数据在内存中以_____码形式存放。
 
 答案：3
 优先级： 单目运算符 > 双目运算符 > 三目运算符，所以 “+” 优先级高于“？：”
+1.55	找错
+以下函数用来对指定的字符串计算32位CRC，请指出其中的3个错误（忽略具体算法本身的正确性）:
+VOS_INT32 TRC_GetCrc32( VOS_INT8 * pBuff, VOS_INT32 ulLen)
+{
+    /* 此处为计算CRC 值的固定算法 */
+    VOS_UINT32 uiCRC = VOS_NULL ^ 0xffffffffL;
+    do 
+    {
+        uiCRC = (trc_crc32_table[((int)uiCRC ^ (*pBuff++)) & 0xff]) ^ (uiCRC >> 8);
+    } 
+    while (ulLen--);
+    return (uiCRC ^ 0xffffffffL);
+}
+
+
+
+
+（1）	入参没有检查有效性
+其它的地方真看不出来 T^T
+1.49	填空
+以下程序执行的结果是_____ 
+#include <stdio.h> 
+main()
+{ 
+	int i,j,row=0,col=0,m; 
+	int a[3][3]={1,-2,0,4,-5,6,2,4}; 
+	m=a[0][0]; 
+	for(i=0;i<3;i++) 
+		for(j=0;j<3;j++) 
+			if(a[i][j]<m) 
+			{
+				m=a[i][j]; 
+				row=i; 
+				col=j;		
+			} 
+			printf("(%d,%d)= %d\n",row,col,m); 
+} 
+
+
+
+
+答案是：（1,1）=-5
+
