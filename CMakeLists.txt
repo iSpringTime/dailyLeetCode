@@ -6,5 +6,7 @@ include_directories(./)
 aux_source_directory(./src srcs)
 add_executable(leetcode ${srcs})
 
+add_subdirectory("proj1")
 add_subdirectory("divisorGame")
 add_subdirectory("isSubsequence")
+add_subdirectory("backspaceCompare")

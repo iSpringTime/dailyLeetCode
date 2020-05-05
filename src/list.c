@@ -34,13 +34,18 @@ void PrintList(ListNode *list)
 void ReverseList(ListNode **list)
 {
     ListNode *listToRever = *list;
+
+    if (*list == NULL) {
+        return;
+    }
+
+    if (listToRever->next == NULL) {
+        *list = listToRever;
+    }
+
     ListNode *pre = listToRever;
     ListNode *cur = listToRever->next;
     ListNode *next = NULL;
-
-    if ((list == NULL) || (listToRever->next == NULL)) {
-        return;
-    }
 
     while (cur != NULL) {
         next = cur->next;
